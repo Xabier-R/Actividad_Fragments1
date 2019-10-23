@@ -17,11 +17,11 @@ public class DetalleActivity extends AppCompatActivity {
                 findFragmentById(R.id.frgDetalle);
 
         //Mensajes al log
-        Log.i("valor EXTRA_TEXTO: ",EXTRA_TEXTO);
+        /*Log.i("valor EXTRA_TEXTO: ",EXTRA_TEXTO);
         Log.i("duracion ",Duracion);
         Log.i("paso: ",getIntent().getStringExtra(EXTRA_TEXTO));
         Log.i("AAA: ",getIntent().getClass().toString());
         //fin mensajes al log
-        detalle.mostrarDetalle(getIntent().getStringExtra(EXTRA_TEXTO));
+        detalle.mostrarDetalle(getIntent().getStringExtra(EXTRA_TEXTO));*/
     }
 }

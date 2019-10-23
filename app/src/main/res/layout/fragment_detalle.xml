@@ -10,26 +10,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="25sp"/>
 
     <TextView
         android:id="@+id/lblAño"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="normal"
-        android:text="12sp"/>
+        android:text="18sp"/>
 
     <TextView
         android:id="@+id/lblDurac"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="normal"
-        android:text="12sp"/>
+        android:text="18sp"/>
 
     <TextView
         android:id="@+id/lblRecau"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="normal"
-        android:text="12sp"/>
+        android:text="18sp"/>
 </LinearLayout>
