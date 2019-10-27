@@ -1,8 +1,9 @@
 package com.example.actividad_fragments1;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Pelicula {
+public class Pelicula implements Serializable {
     private String titulo;
     private String año_estreno;
     private int duracion;
@@ -11,7 +12,7 @@ public class Pelicula {
 
     public Pelicula(String titulo, String fecha_estreno, int duracion, int recaudacion) {
         this.titulo = titulo;
-        this.año_estreno = año_estreno;
+        this.año_estreno = fecha_estreno;
         this.duracion = duracion;
         this.recaudacion=recaudacion;
     }

@@ -21,7 +21,7 @@ public class FragmentListado extends Fragment {
    private Pelicula[] pelis =new Pelicula[]{new Pelicula("Star wars", "2018",153,1111),
                                             new Pelicula("Origen","2008",170,520),
                                             new Pelicula("El padrino", "1978",190,430),
-                                            new Pelicula("Cedena perpetua", "1994",163,463)};
+                                            new Pelicula("Cadena perpetua", "1994",163,463)};
 
     private ListView lstListado;
     private PeliculaListener listener;

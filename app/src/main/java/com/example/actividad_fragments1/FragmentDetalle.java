@@ -19,12 +19,12 @@ public class FragmentDetalle extends Fragment {
         return inflater.inflate(R.layout.fragment_detalle, container,false);
     }
 
-    public void mostrarDetalle (String titulo,String estreno,int duracion, int recaudacion) {
+    public void mostrarDetalle (Pelicula p) {
         TextView Titulo =(TextView)getView().findViewById(R.id.lblTitulo);
-        Titulo.setText(titulo);
+        Titulo.setText(p.getTitulo());
         TextView año =(TextView)getView().findViewById(R.id.lblAño);
-        Titulo.setText(estreno);
+        año.setText(p.getAño_estreno());
         TextView Duracion =(TextView)getView().findViewById(R.id.lblDurac);
-        Titulo.setText(duracion);
+        Duracion.setText(p.getDuracion()+"");
     }
 }

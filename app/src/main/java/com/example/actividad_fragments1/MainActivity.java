@@ -23,14 +23,11 @@ public class MainActivity extends AppCompatActivity implements PeliculaListener 
         boolean hayDetalle =(getSupportFragmentManager().findFragmentById(R.id.frgDetalle)!= null);
         if (hayDetalle) {
             ((FragmentDetalle)getSupportFragmentManager().
-                    findFragmentById(R.id.frgDetalle)).mostrarDetalle(p.getTitulo(),p.getAño_estreno(),p.getDuracion(),p.getRecaudacion());
+                    findFragmentById(R.id.frgDetalle)).mostrarDetalle(p);
         }
         else {
             Intent i = new Intent(this, DetalleActivity.class);
-            i.putExtra("titulo", p.getTitulo());
-            i.putExtra("Estreno", p.getAño_estreno());
-            i.putExtra("Duracion", p.getDuracion());
-            i.putExtra("Recaudacion", p.getRecaudacion());
+            i.putExtra(DetalleActivity.EXTRA_TEXTO, p);
             startActivity(i);
         }
     }
