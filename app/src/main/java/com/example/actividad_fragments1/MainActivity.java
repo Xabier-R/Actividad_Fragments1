@@ -27,7 +27,14 @@ public class MainActivity extends AppCompatActivity implements PeliculaListener 
         }
         else {
             Intent i = new Intent(this, DetalleActivity.class);
+
+            //De 2 Maneras
             i.putExtra(DetalleActivity.EXTRA_TEXTO, p);
+            /*
+            Bundle bundle = new Bundle();
+            bundle.putSerializable(DetalleActivity.EXTRA_TEXTO, p);
+            i.putExtras(bundle);
+            */
             startActivity(i);
         }
     }

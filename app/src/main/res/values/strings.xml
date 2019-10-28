@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Actividad_Fragments1</string>
+    <string name="titulo">Titulo:</string>
+    <string name="estreno">Año de estreno</string>
+    <string name="duracion">Duracion:</string>
+    <string name="recaudacion">Recaudacion:</string>
 </resources>

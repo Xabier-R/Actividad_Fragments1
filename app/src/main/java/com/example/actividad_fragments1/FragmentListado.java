@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,10 +19,10 @@ import androidx.fragment.app.Fragment;
 import java.util.Date;
 
 public class FragmentListado extends Fragment {
-   private Pelicula[] pelis =new Pelicula[]{new Pelicula("Star wars", "2018",153,1111),
-                                            new Pelicula("Origen","2008",170,520),
-                                            new Pelicula("El padrino", "1978",190,430),
-                                            new Pelicula("Cadena perpetua", "1994",163,463)};
+   private Pelicula[] pelis =new Pelicula[]{new Pelicula("Star wars", R.drawable.starwars, "2018",153,1111),
+                                            new Pelicula("Origen",R.drawable.origen,"2008",170,520),
+                                            new Pelicula("El padrino", R.drawable.elpadrino,"1978",190,430),
+                                            new Pelicula("Cadena perpetua", R.drawable.cadenaper,"1994",163,463)};
 
     private ListView lstListado;
     private PeliculaListener listener;
@@ -65,6 +66,8 @@ class AdaptadorPeliculas extends ArrayAdapter<Pelicula> {
             View item = inflater.inflate(R.layout.listitem_peliculas, null);
             TextView Titulo = (TextView) item.findViewById(R.id.lblTitulo);
             Titulo.setText(pelis[position].getTitulo());
+            ImageView imagen = (ImageView) item.findViewById(R.id.img);
+            imagen.setImageResource(pelis[position].getImagen());
             return (item);
         }
     }

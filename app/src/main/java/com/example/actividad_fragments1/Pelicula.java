@@ -5,18 +5,27 @@ import java.util.Date;
 
 public class Pelicula implements Serializable {
     private String titulo;
+    private int imagen;
     private String año_estreno;
     private int duracion;
     private int recaudacion;
 
 
-    public Pelicula(String titulo, String fecha_estreno, int duracion, int recaudacion) {
+    public Pelicula(String titulo,int imagen, String fecha_estreno, int duracion, int recaudacion) {
         this.titulo = titulo;
+        this.imagen = imagen;
         this.año_estreno = fecha_estreno;
         this.duracion = duracion;
         this.recaudacion=recaudacion;
     }
 
+    public int getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(int imagen) {
+        this.imagen = imagen;
+    }
 
     public String getTitulo() {
         return titulo;

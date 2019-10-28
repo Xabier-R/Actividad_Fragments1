@@ -20,11 +20,13 @@ public class FragmentDetalle extends Fragment {
     }
 
     public void mostrarDetalle (Pelicula p) {
-        TextView Titulo =(TextView)getView().findViewById(R.id.lblTitulo);
+        TextView Titulo =(TextView)getView().findViewById(R.id.lblTitulotxt);
         Titulo.setText(p.getTitulo());
-        TextView año =(TextView)getView().findViewById(R.id.lblAño);
+        TextView año =(TextView)getView().findViewById(R.id.lblAñotxt);
         año.setText(p.getAño_estreno());
-        TextView Duracion =(TextView)getView().findViewById(R.id.lblDurac);
+        TextView Duracion =(TextView)getView().findViewById(R.id.lblDuractxt);
         Duracion.setText(p.getDuracion()+"");
+        TextView Recaudacion =(TextView)getView().findViewById(R.id.lblRecautxt);
+        Recaudacion.setText(p.getRecaudacion()+"");
     }
 }
