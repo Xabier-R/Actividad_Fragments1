@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,8 @@ public class FragmentDetalle extends Fragment {
     }
 
     public void mostrarDetalle (Pelicula p) {
+        ImageView img=(ImageView)getView().findViewById(R.id.IVimagen);
+        img.setImageResource(p.getImagen());
         TextView Titulo =(TextView)getView().findViewById(R.id.lblTitulotxt);
         Titulo.setText(p.getTitulo());
         TextView año =(TextView)getView().findViewById(R.id.lblAñotxt);

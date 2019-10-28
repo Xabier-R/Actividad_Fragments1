@@ -1,0 +1,8 @@
+
+<resources>
+    <string name="app_name">Fragments1_Activity</string>
+    <string name="titulo">Title:</string>
+    <string name="estreno">Release date: </string>
+    <string name="duracion">Lenght:</string>
+    <string name="recaudacion">Box office:</string>
+</resources>
